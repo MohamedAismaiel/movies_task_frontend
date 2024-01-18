@@ -56,9 +56,9 @@ function Header() {
             Search
           </label>
           <div className="relative w-full">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <div className="absolute  inset-y-0 start-0 flex items-center  top-1 left-2 sm:left-0 ps-3 pointer-events-none">
               <svg
-                className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                className="w-4 h-4 text-gray-500 dark:text-gray-400 "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,7 +76,7 @@ function Header() {
             <input
               type="search"
               id="default-search"
-              className="border-none block w-full p-4 ps-10  text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:dark:focus:border-none focus:outline-none py-5 text-2xl"
+              className="border-none block w-full p-4 ps-10  text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:dark:focus:border-none focus:outline-none sm:py-5 py-7 text-2xl pl-14 sm:pl-12"
               value={searchValue}
               onChange={(e) => {
                 setSearchValue(e.target.value);
@@ -86,7 +86,7 @@ function Header() {
             />
             <button
               type="submit"
-              className="text-white absolute end-2.5 bottom-3 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-md px-8 py-3"
+              className="text-white sm:right-5 right-8 absolute end-2.5 sm:bottom-3 bottom-5 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-md px-8 py-3"
             >
               Search
             </button>
