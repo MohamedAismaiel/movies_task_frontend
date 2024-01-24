@@ -8,8 +8,8 @@ const reducerFun = (
     totalResults: null,
     pageSize: 20,
     sameSearchKey: false,
-    // url: " https://movies-sylndr-task.onrender.com",
-    url: " http://localhost:4000",
+    url: " https://movies-sylndr-task.onrender.com",
+    // url: " http://localhost:4000",
   },
   action
 ) => {

@@ -28,8 +28,10 @@ function HomePage() {
   };
   useEffect(() => {
     setErrors([]);
+
     if (!searchParams.get("page")) {
       //when the URL is changed from "?page=currentPage" to "/"" we set the current page to the first one  in order to change the pagination back to first page
+
       setCurrenctPage(1);
     }
     //we only want to render this fetch in two cases, only if it is first time to render it or the page value is null (url changed from '?page=...' to /) , we do this to avoid the render of this function when pagination happens because pagination changes the URL query (page)
